@@ -1,161 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hemanth</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velagali Hemanth Kumar — AI/ML Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <video class="back-vid" loop autoplay muted plays-inline src="videos/galaxy.mp4" type="video/mp4"></video>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+<div class="bg-grid"></div>
+
+<!-- ─── NAV ─── -->
+<nav id="nav">
+  <div class="nav-logo">~/ <span>velagali</span>@hemanth</div>
+  <ul class="nav-links">
+    <li><a href="#about"><span class="n">01</span>About</a></li>
+    <li><a href="#research"><span class="n">02</span>Research</a></li>
+    <li><a href="#experience"><span class="n">03</span>Experience</a></li>
+    <li><a href="#projects"><span class="n">04</span>Projects</a></li>
+    <li><a href="#opensource"><span class="n">05</span>Open Source</a></li>
+    <li><a href="#contact"><span class="n">06</span>Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="status-bar">
+      <div class="status-dot"></div>
+      <span class="status-text">Available for opportunities</span>
+      <div class="status-sep"></div>
+      <span class="cmd-tag">hemanth@portfolio <span class="cmd" id="terminal-cmd">$ python train.py</span></span>
+    </div>
+
+    <h1 class="headline">
+      <span class="hl-1">Velagali</span>
+      <span class="hl-2">Hemanth</span>
+      <span class="hl-3">Kumar.</span>
+    </h1>
+
+    <div class="roles">
+      <span class="pill hi">CS Graduate</span>
+      <span class="pill-sep">·</span>
+      <span class="pill">AI / ML Engineer</span>
+      <span class="pill-sep">·</span>
+      <span class="pill">Researcher</span>
+      <span class="pill-sep">·</span>
+      <span class="pill">Builder</span>
+    </div>
+
+    <p class="bio">
+      I build <em>intelligent systems</em> that turn raw data into meaningful decisions.
+      Passionate about <em>machine learning</em>, privacy-preserving AI, and creating
+      software that actually matters at the edge.
+    </p>
+
+    <div class="cta-row">
+      <a href="#projects" class="btn-p">View Projects <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1 6.5h11M6.5 1l5.5 5.5-5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="#contact" class="btn-s">Let's Connect</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item"><strong>3</strong>Research Papers</div>
+      <div class="stat-sep"></div>
+      <div class="stat-item"><strong>5+</strong>Projects Built</div>
+      <div class="stat-sep"></div>
+      <div class="stat-item"><strong>SIH '24</strong>Finalist</div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <!-- HERO IMAGE -->
+    <div class="hero-image-wrap">
+      <img
+        src="assets/images/Hemanth.png"
+        class="hero-image"
+        alt="Velagali Hemanth Kumar"
+      />
+    </div>
     
-        <header>
-            <div class="left">
-                <img src="images/miladicode.png" alt="logo"> <!-- change it to your logo or delete this or add sprite-->
-                <h1>Hemanth</h1><!--9:21 changed half of the color so if wanted do it-->
-            </div>
-
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
-
-            <div class="box-icons">
-                <a href="#"><i class='bx bxl-youtube'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-            </div>
-        </header>
-
-        <div class="blackhole-box">
-            <video loop autoplay muted plays-inline src="videos/blackhole.mp4" type="video/mp4"></video>
-        </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-accent-line"></div>
     
+    <div class="code-float">
+      <div class="cf-head">system.config</div>
+      <div class="cf-line"><span class="cf-kw">import</span> torch</div>
+      <div class="cf-line"><span class="cf-kw">import</span> cv2</div>
+      <div class="cf-line"><span class="cf-fn">init_model</span>(<span class="cf-str">'edge-agent'</span>)</div>
+    </div>
+    
+    <div class="hero-loc">
+      <div class="teal">Andhra Pradesh, IN</div>
+      <div>13.6°N · 79.4°E</div>
+    </div>
+  </div>
 
-    <section class="hero">
-        <div class="hero-info">
-            <div class="hero-info-title">
-                <i class='bx bxl-sketch'></i>
-                Front-end Developer Portfolio
-            </div>
+  <div class="scroll-ind"><div class="si-line"></div><span class="si-txt">Scroll</span></div>
+</section>
 
-            <h1>Providing <span class="gradient">the best</span> project <span
-            class="gradient">Experience</span></h1> <!-- here inside span we can put the text to add the filter-->
-
-            <p>I'm a Front-end developer with Experience in 
-                website and Software development. Check out 
-                my and skills. </p>
-
-            <button><i class='bx bx-send'></i> Contact Me</button>
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal reveal-d1">
+        <p>I'm a <em>Computer Science graduate</em> who somehow convinced a university to give me a degree while I was busy training models, writing ciphers, and building robots that (mostly) avoided walls. My work sits at the intersection of <em>research and engineering</em> — I don't just study problems, I ship solutions to them.</p>
+        <p>From designing <em>lightweight cryptographic algorithms</em> for edge devices to building <em>offline LLM chatbots</em> that run without internet — I'm drawn to the kind of constraints that force you to actually think. My thesis was a mental health chatbot that keeps your data local. Yes, even the AI I build respects your privacy.</p>
+        <p>When I'm not in a terminal, I'm <em>mentoring peers</em>, writing on Medium, or in a hackathon at 3am explaining to my team why we should rewrite the whole thing from scratch. (It usually works out.)</p>
+        <div class="research-interests">
+          <div class="ri-label">Research Interests</div>
+          <div class="ri-tags">
+            <span class="ri-tag">Large Language Models</span>
+            <span class="ri-tag">Privacy-Preserving AI</span>
+            <span class="ri-tag">Edge AI Systems</span>
+            <span class="ri-tag">Lightweight Cryptography</span>
+            <span class="ri-tag">Computer Vision</span>
+            <span class="ri-tag">Autonomous Robotics</span>
+            <span class="ri-tag">Secure Inference</span>
+          </div>
         </div>
-
-        <div class="hero-vid-box">
-            <video loop autoplay muted plays-inline src="videos/hero-video.mp4" type="video/mp4"></video>
+      </div>
+      <div class="about-right reveal reveal-d2">
+        <!-- ── TERMINAL WIDGET ── -->
+        <div class="terminal-widget">
+          <div class="tw-titlebar">
+            <div class="tw-dots">
+              <span class="tw-dot tw-red"></span>
+              <span class="tw-dot tw-yellow"></span>
+              <span class="tw-dot tw-green"></span>
+            </div>
+            <span class="tw-title">hemanth — bash — 80×24</span>
+          </div>
+          <div class="tw-body">
+            <div class="tw-prompt">
+              <span class="tw-user">~$</span>
+              <span class="tw-cmd"> cat about.json</span>
+            </div>
+            <div class="tw-output">
+              <span class="tw-brace">{</span><br>
+              &nbsp;&nbsp;<span class="tw-key">"name"</span><span class="tw-colon">:</span> <span class="tw-val">"Velagali Hemanth Kumar"</span>,<br>
+              &nbsp;&nbsp;<span class="tw-key">"role"</span><span class="tw-colon">:</span> <span class="tw-val">"CS Graduate"</span>,<br>
+              &nbsp;&nbsp;<span class="tw-key">"focus"</span><span class="tw-colon">:</span> <span class="tw-val">"AI / ML Engineering"</span>,<br>
+              &nbsp;&nbsp;<span class="tw-key">"open_to"</span><span class="tw-colon">:</span> <span class="tw-val">"opportunities"</span><br>
+              <span class="tw-brace">}</span>
+            </div>
+            <div class="tw-prompt tw-prompt-2">
+              <span class="tw-user">~$</span>
+              <span class="tw-cmd"> echo $STATUS</span>
+            </div>
+            <div class="tw-status">
+              <span class="tw-arrow">▶</span> actively looking ✓
+            </div>
+            <div class="tw-cursor-line"><span class="tw-user">~$</span> <span class="tw-blink">█</span></div>
+          </div>
         </div>
-
-        <div class="scroll-down"></div>
-    </section>
-
-    <section class="info-section">
-        <h1 class="section-title">Hello, There👋</h1>
-        <div class="info-cards">
-            <div class="card">
-                <h1>Hi there, I'm Hemanth</h1>
-                <P>With 4 years of expereince. I have honed my skill in both 
-                   frontend and backend de, creating dynamic and responsive websites.
-                </P>
-
-                <img src="images/grid1.png" alt="card-image">
-            </div>
-
-            <div class="card">
-                <h1>Tech Stack</h1>
-                <P>With 4 years of expereince. I have honed my skill in both 
-                   frontend and backend de, creating dynamic and responsive websites.
-                </P>
-
-                <img src="images/grid2.png" alt="card-image">
-            </div>
-
-            <div class="card">
-                <h1>I'm very flexible with time zone communications & locations</h1>
-                <P>I'm based in India, AP and open to remote work worldwide.</P>
-
-                <video autoplay loop muted plays-inline src="videos/glob.mp4" type="video/mp4"></video>
-            
-                <button><i class='bx bx-link-enternal'></i> Contact Me</button>
-            </div>
-
-            <div class="card">
-                <h1>My Passion for Coding</h1>
-                <P>I love solving problems and building things through code.
-                    Programming isn't just my profession-it's my passion. I enjoy
-                    exploring new technologies, and enhancing my skills.</P>
-
-                <img src="images/grid4.png" alt="card-image">
-            </div>
+        <!-- ── STATS GRID ── -->
+        <div class="about-stats-grid">
+          <div class="ast-cell">
+            <strong>10+</strong>
+            <span>Projects Built</span>
+          </div>
+          <div class="ast-cell">
+            <strong>3+</strong>
+            <span>Years Coding</span>
+          </div>
+          <div class="ast-cell">
+            <strong>5+</strong>
+            <span>Technologies</span>
+          </div>
+          <div class="ast-cell ast-fun">
+            <strong>∞</strong>
+            <span>Coffee Consumed</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="my-projects">
-        <h1 class="section-title">MY Projects 🧑‍💻</h1>
-        <div class="project-card">
-            <div class="project-vidbox">
-                <video id="projectVideo1" src="videos/project1.mp4"></video>
-            </div>
+<!-- ─── RESEARCH ─── -->
+<section id="research">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Research</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="research-grid">
 
-            <div class="project-info">
-                <h1>Animatd <span class="gradient">Gaming</span> Website</h1>
-
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, sit, qua
-                    veritatis aperiam omnis inventore harum quasi 
-                    perspiciatis, accusamus rem at quam aut! Explicabo ipsa 
-                    consectetur cupiditate! Sed, consequ</p>
-
-                <button><i class='bx bx-link-external'></i> Website</button>
-            </div>
+      <div class="paper-card reveal reveal-d1">
+        <div class="paper-meta">
+          <span class="paper-tag tag-review">Under Review · IAENG</span>
+          <span class="paper-year">2025 – 2026</span>
         </div>
-
-         <div class="project-card">
-            <div class="project-vidbox">
-                <video id="projectVideo2" src="videos/project2.mp4"></video>
-            </div>
-
-            <div class="project-info">
-                <h1>Morder <span class="gradient">Portfolio</span> Website</h1>
-
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, sit, qua
-                    veritatis aperiam omnis inventore harum quasi 
-                    perspiciatis, accusamus rem at quam aut! Explicabo ipsa 
-                    consectetur cupiditate! Sed, consequ</p>
-
-                <button><i class='bx bx-link-external'></i> Website</button>
-            </div>
+        <div class="paper-title">The Spiral Bit Matrix Cipher (SBMC): A Lightweight and Non-Linear Encryption Scheme</div>
+        <div class="paper-authors"><em>Velagali Hemanth Kumar</em>, Dadi Venkata Varaprasad</div>
+        <p class="paper-desc">A lightweight bit-level symmetric encryption algorithm designed for resource-constrained environments, with application to secure edge AI data transmission. Demonstrates strong diffusion, statistical robustness, and near-ideal entropy on grayscale image encryption.</p>
+        <div class="paper-highlights">
+          <span class="ph">3× faster than AES (1MB)</span>
+          <span class="ph">Avalanche: 0.9970</span>
+          <span class="ph">NPCR: 99.61%</span>
+          <span class="ph">Entropy: 7.94</span>
+          <span class="ph">Edge AI applicable</span>
         </div>
+      </div>
 
-         <div class="project-card">
-            <div class="project-vidbox">
-                <video id="projectVideo3" src="videos/project3.mp4"></video>
-            </div>
-
-            <div class="project-info">
-                <h1>Movie <span class="gradient">Landing</span> Website</h1>
-
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, sit, qua
-                    veritatis aperiam omnis inventore harum quasi 
-                    perspiciatis, accusamus rem at quam aut! Explicabo ipsa 
-                    consectetur cupiditate! Sed, consequ</p>
-
-                <button><i class='bx bx-link-external'></i> Website</button>
-            </div>
+      <div class="paper-card reveal reveal-d2">
+        <div class="paper-meta">
+          <span class="paper-tag tag-preprint">Preprint · Public</span>
+          <span class="paper-year">2024 – 2025</span>
         </div>
-    </section>
+        <div class="paper-title">Emergent Intelligence Transferability (EIT): A Theoretical Framework</div>
+        <div class="paper-authors">Independent Research — <em>Velagali Hemanth Kumar</em></div>
+        <p class="paper-desc">A theoretical model and quantitative metric — the Transferability Index (TI) — to study how AI systems carry learned knowledge to new, unseen tasks. Analyzes how dataset diversity, model capacity, and task complexity interact to influence generalization beyond training data.</p>
+        <div class="paper-highlights">
+          <span class="ph">Transferability Index (TI)</span>
+          <span class="ph">Zero-shot generalization</span>
+          <span class="ph">Dataset diversity analysis</span>
+        </div>
+      </div>
 
+      <div class="paper-card reveal reveal-d3">
+        <div class="paper-meta">
+          <span class="paper-tag tag-thesis">Final Year Thesis</span>
+          <span class="paper-year">2024 – 2025</span>
+        </div>
+        <div class="paper-title">Offline Mental Health Chatbot Using Local LLM</div>
+        <div class="paper-authors">Final Year Thesis — <em>Velagali Hemanth Kumar</em></div>
+        <p class="paper-desc">A fully offline mental health chatbot using transformer-based local LLMs, eliminating cloud dependency to ensure complete user data privacy. Evaluated trade-offs between model size, response coherence, and computational constraints in low-connectivity environments.</p>
+        <div class="paper-highlights">
+          <span class="ph">Zero cloud dependency</span>
+          <span class="ph">Privacy-preserving</span>
+          <span class="ph">Local inference pipeline</span>
+          <span class="ph">Low-connectivity ready</span>
+        </div>
+      </div>
 
-</div>
-    <script src="app.js"></script>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXPERIENCE ─── -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="exp-timeline">
+
+      <div class="exp-item reveal">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <span class="exp-role">Technical Trainee</span>
+          <span class="exp-period">Feb 2025 – Sep 2025</span>
+        </div>
+        <div class="exp-company">Kodnest Technologies, Bengaluru</div>
+        <ul class="exp-points">
+          <li>Completed intensive training in <em>Python, Data Structures &amp; Algorithms</em> and algorithmic optimization.</li>
+          <li>Implemented time- and space-efficient solutions for computational problems under real-world constraints.</li>
+          <li>Built and deployed multiple practice projects applying DSA concepts and <em>object-oriented design</em>.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item reveal reveal-d1">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <span class="exp-role">AI &amp; Robotics Intern</span>
+          <span class="exp-period">Early 2025</span>
+        </div>
+        <div class="exp-company">Techy Bot — Training Program (500+ students)</div>
+        <ul class="exp-points">
+          <li>Selected for a large-scale AI &amp; Robotics internship training program among <em>500+ students</em>.</li>
+          <li>Developed a <em>vision-based obstacle avoidance robot</em> using OpenCV and Python — real-time perception pipeline with camera input, object detection, and autonomous movement logic.</li>
+          <li>Applied computer vision and real-time image processing for practical AI-driven solutions.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item reveal reveal-d2">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <span class="exp-role">AI Intern</span>
+          <span class="exp-period">Nov – Dec 2024</span>
+        </div>
+        <div class="exp-company">AICTE — Supported by Microsoft &amp; SAP</div>
+        <ul class="exp-points">
+          <li>Developed and trained a <em>supervised multi-class image classification model</em> from end to end.</li>
+          <li>Implemented data preprocessing and augmentation techniques — <em>~10% accuracy improvement</em> over baseline.</li>
+          <li>Evaluated using accuracy, precision, and confusion matrix metrics; explored web/mobile deployment feasibility.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item reveal reveal-d3">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <span class="exp-role">Peer Mentor — DSA</span>
+          <span class="exp-period">2024 – 2025</span>
+        </div>
+        <div class="exp-company">Audisankara College of Engineering &amp; Technology</div>
+        <ul class="exp-points">
+          <li>Mentored <em>6 peers over 7 months</em> in Python and Data Structures &amp; Algorithms.</li>
+          <li>Guided structured roadmap resulting in <em>150+ problems solved collectively</em> — ~55% improvement in proficiency.</li>
+          <li>Delivered 7 academic sessions to <em>460+ students cumulatively</em> on AI, ML, and competitive problem-solving; increased departmental hackathon participation by <em>18%</em>.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROJECTS ─── -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="proj-card reveal reveal-d1">
+        <div style="display:flex;justify-content:space-between;align-items:baseline">
+          <span class="proj-num">P.01</span><span class="proj-year">2025</span>
+        </div>
+        <div class="proj-title">DepthVision: Monocular Depth Estimation for Autonomous Navigation</div>
+        <p class="proj-desc">Computer vision system for monocular depth estimation using deep neural networks to infer scene geometry from single RGB images. Built real-time visualization pipeline with obstacle detection via depth thresholding.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">PyTorch</span><span class="proj-tag">KITTI</span><span class="proj-tag">NYU Depth</span><span class="proj-tag">OpenCV</span><span class="proj-tag">Autonomous Nav</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal reveal-d2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline">
+          <span class="proj-num">P.02</span><span class="proj-year">2024</span>
+        </div>
+        <div class="proj-title">Fog-Aware Traffic Detection System using YOLOv8 &amp; OpenCV</div>
+        <p class="proj-desc">Real-time vehicle detection and classification system optimized for low-visibility environments. Integrated contrast enhancement and dehazing filters achieving ~8–10% improvement over baseline YOLOv8 in foggy conditions.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">YOLOv8</span><span class="proj-tag">OpenCV</span><span class="proj-tag">Dehazing</span><span class="proj-tag">Real-Time</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal reveal-d1">
+        <div style="display:flex;justify-content:space-between;align-items:baseline">
+          <span class="proj-num">P.03</span><span class="proj-year">2024</span>
+        </div>
+        <div class="proj-title">AI-Based Enhancement of Lunar PSR Imagery (SIH 2024)</div>
+        <p class="proj-desc">AI-driven image enhancement pipeline for Permanently Shadowed Region lunar images from OHRC camera. Applied preprocessing and contrast enhancement for improved visibility in low-light shadowed regions. <em>SIH 2024 Grand Finale project.</em></p>
+        <div class="proj-tags">
+          <span class="proj-tag">Image Enhancement</span><span class="proj-tag">Space AI</span><span class="proj-tag">OHRC</span><span class="proj-tag">SIH 2024</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal reveal-d2">
+        <div style="display:flex;justify-content:space-between;align-items:baseline">
+          <span class="proj-num">P.04</span><span class="proj-year">2024</span>
+        </div>
+        <div class="proj-title">Live ISS Tracker with 3D Visualization</div>
+        <p class="proj-desc">Real-time ISS tracking web application using Three.js and WebGL — live satellite coordinates mapped onto a 3D globe with dynamic orbital path rendering and periodic API updates. Full interactive web experience.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Three.js</span><span class="proj-tag">WebGL</span><span class="proj-tag">Real-Time API</span><span class="proj-tag">3D Visualization</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal reveal-d1" style="grid-column: span 2;">
+        <div style="display:flex;justify-content:space-between;align-items:baseline">
+          <span class="proj-num">P.05</span><span class="proj-year">2024–2025</span>
+        </div>
+        <div class="proj-title">EdgeRAG: Offline Knowledge Retrieval for Low-Connectivity Environments</div>
+        <p class="proj-desc">Offline RAG system architecture using FAISS, sentence-transformers, and lightweight local LLM inference for knowledge retrieval without internet connectivity. Published as a technical article on Medium — guidelines for edge deployment of LLMs with data leakage protection, prompt injection mitigation, and stateless architecture design.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">RAG</span><span class="proj-tag">FAISS</span><span class="proj-tag">Sentence Transformers</span><span class="proj-tag">Local LLM</span><span class="proj-tag">Offline AI</span><span class="proj-tag">LangChain</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── SKILLS ─── -->
+<section id="skills" style="padding:0 0 120px">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">04.5</span>
+      <h2 class="section-title">Skills</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal reveal-d1">
+        <div class="sg-label">Languages</div>
+        <div class="sg-chips">
+          <span class="sg-chip">Python</span>
+          <span class="sg-chip">JavaScript</span>
+          <span class="sg-chip">Java</span>
+          <span class="sg-chip">C</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-d2">
+        <div class="sg-label">ML / AI</div>
+        <div class="sg-chips">
+          <span class="sg-chip">PyTorch</span>
+          <span class="sg-chip">Neural Networks</span>
+          <span class="sg-chip">Computer Vision</span>
+          <span class="sg-chip">YOLOv8</span>
+          <span class="sg-chip">Transformers</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-d3">
+        <div class="sg-label">LLM Ecosystem</div>
+        <div class="sg-chips">
+          <span class="sg-chip">Hugging Face</span>
+          <span class="sg-chip">LangChain</span>
+          <span class="sg-chip">Local LLM Deploy</span>
+          <span class="sg-chip">Prompt Engineering</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-d1">
+        <div class="sg-label">RAG / Vector Search</div>
+        <div class="sg-chips">
+          <span class="sg-chip">FAISS</span>
+          <span class="sg-chip">Sentence Transformers</span>
+          <span class="sg-chip">Semantic Search</span>
+          <span class="sg-chip">RAG Pipelines</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-d2">
+        <div class="sg-label">Vision / Robotics</div>
+        <div class="sg-chips">
+          <span class="sg-chip">OpenCV</span>
+          <span class="sg-chip">Monocular Depth</span>
+          <span class="sg-chip">Real-Time Perception</span>
+          <span class="sg-chip">Obstacle Avoidance</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-d3">
+        <div class="sg-label">Web & Tools</div>
+        <div class="sg-chips">
+          <span class="sg-chip">Flask</span>
+          <span class="sg-chip">Streamlit</span>
+          <span class="sg-chip">React.js</span>
+          <span class="sg-chip">Three.js</span>
+          <span class="sg-chip">Git</span>
+          <span class="sg-chip">GitHub</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── OPEN SOURCE ─── -->
+<section id="opensource">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Open Source</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="oss-placeholder reveal">
+      <span class="oss-corner tl">// placeholder</span>
+      <span class="oss-corner tr">github.com/HemanthVelagali</span>
+      <span class="oss-corner bl">status: coming_soon</span>
+      <span class="oss-corner br">populate: Q3 2025</span>
+      <div class="oss-icon">⌥</div>
+      <h3>Open Source Contributions</h3>
+      <p>This section will showcase repositories, contributions, and community tools.<br>Currently being populated — check back soon or visit GitHub directly.</p>
+      <a href="https://github.com/HemanthVelagali" target="_blank" class="oss-coming btn-p" style="cursor:none">View GitHub Profile →</a>
+      <div class="oss-cards-preview">
+        <div class="oss-card-ph"><div class="oc-icon">repo_01 ·</div><div class="oc-title"></div><div class="oc-sub"></div><div class="oc-tags"><div class="oc-tag"></div><div class="oc-tag"></div></div></div>
+        <div class="oss-card-ph"><div class="oc-icon">repo_02 ·</div><div class="oc-title"></div><div class="oc-sub"></div><div class="oc-tags"><div class="oc-tag"></div><div class="oc-tag"></div></div></div>
+        <div class="oss-card-ph"><div class="oc-icon">repo_03 ·</div><div class="oc-title"></div><div class="oc-sub"></div><div class="oc-tags"><div class="oc-tag"></div><div class="oc-tag"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ACHIEVEMENTS ─── -->
+<section id="achievements">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">05.5</span>
+      <h2 class="section-title">Achievements</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="ach-grid">
+      <div class="ach-card reveal reveal-d1">
+        <div class="ach-rank">01</div>
+        <div class="ach-badge">SIH 2024 · National</div>
+        <div class="ach-title">Smart India Hackathon Grand Finale</div>
+        <p class="ach-desc">Finalist among 88,221 teams (4,92,960 students from 2,600 institutes). Competed in 36-hour national finale at Gujarat Technological University, Ahmedabad.</p>
+      </div>
+      <div class="ach-card reveal reveal-d2">
+        <div class="ach-rank">02</div>
+        <div class="ach-badge">Best AI · Inter-State</div>
+        <div class="ach-title">Best AI Project — Hack With Nellore</div>
+        <p class="ach-desc">Awarded for best AI-based innovation at an inter-state hackathon. Served as Team Leader among 200+ participants from multiple Indian states.</p>
+      </div>
+      <div class="ach-card reveal reveal-d3">
+        <div class="ach-rank">03</div>
+        <div class="ach-badge">3rd Place · College</div>
+        <div class="ach-title">24-Hour College Hackathon</div>
+        <p class="ach-desc">Led a 4-member team to deliver a functional solution under 24-hour constraints among 160+ students across all academic years.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ARTICLES ─── -->
+<section id="articles" style="padding:0 0 120px">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">05.7</span>
+      <h2 class="section-title">Writing</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="articles-list">
+      <a href="#" class="article-row reveal">
+        <span class="art-year">2026</span>
+        <span class="art-num">01</span>
+        <span class="art-title">Deploying Offline LLMs Safely</span>
+        <span class="art-pub">Medium</span>
+        <span class="art-arrow">→</span>
+      </a>
+      <a href="#" class="article-row reveal reveal-d1">
+        <span class="art-year">2025</span>
+        <span class="art-num">02</span>
+        <span class="art-title">EdgeRAG: Offline Knowledge Retrieval for Low-Connectivity Environments</span>
+        <span class="art-pub">Medium</span>
+        <span class="art-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-inner">
+      <div class="contact-left reveal">
+        <h2>Let's build<br>something <em>real.</em></h2>
+        <p>Open to research collaborations, ML engineering roles, and interesting problems. If you're working on edge AI, privacy-preserving systems, or just want to talk ML — reach out.</p>
+        <div class="contact-links">
+          <a href="mailto:avelagalihemanth@gmail.com" class="contact-link">
+            <span class="cl-icon">EMAIL</span>
+            <!-- Single-run glitch/matrix decrypt effect. Runs once on page load. Does NOT loop. -->
+            <span class="cl-val email-glitch" id="email-glitch-target" data-text="avelagalihemanth@gmail.com">avelagalihemanth@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/hemanth-velagali" target="_blank" class="contact-link" style="justify-content: space-between;">
+            <span class="cl-icon">LINKEDIN</span>
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1 6.5h11M6.5 1l5.5 5.5-5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://github.com/HemanthVelagali" target="_blank" class="contact-link" style="justify-content: space-between;">
+            <span class="cl-icon">GITHUB</span>
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1 6.5h11M6.5 1l5.5 5.5-5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="contact-right reveal reveal-d2">
+        <div class="contact-form-note">Send a message</div>
+        <div class="cf-field"><label class="cf-label">Name</label><input class="cf-input" type="text" placeholder="Your name"></div>
+        <div class="cf-field"><label class="cf-label">Email</label><input class="cf-input" type="email" placeholder="your@email.com"></div>
+        <div class="cf-field"><label class="cf-label">Message</label><textarea class="cf-input cf-textarea" placeholder="What are you working on?"></textarea></div>
+        <button class="btn-p" style="align-self:flex-start;cursor:none;border:none">Send Message <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1 6.5h11M6.5 1l5.5 5.5-5.5 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="foot-logo">~/ <span>velagali</span>@hemanth · 2025</div>
+  <div class="foot-socials">
+    <a href="https://github.com/HemanthVelagali" target="_blank" class="foot-social" title="GitHub" aria-label="GitHub">
+      <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
+    <a href="https://linkedin.com/in/hemanth-velagali" target="_blank" class="foot-social" title="LinkedIn" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+    <a href="https://medium.com/@avelagalihemanth" target="_blank" class="foot-social" title="Medium" aria-label="Medium">
+      <svg viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+    </a>
+  </div>
+  <div class="foot-copy">Built with care · Andhra Pradesh, India</div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
