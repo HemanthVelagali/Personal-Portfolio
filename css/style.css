@@ -544,3 +544,17 @@ footer {
   .stat-sep { height: 1px; width: 40px; }
   .contact-left h2 { font-size: 32px; }
 }
+
+/* ─── GEO-BASED CONDITIONAL DISPLAY ─── */
+html.geo-in [data-geo-hide-in="IN"],
+[data-geo-hide-in="IN"].geo-hidden {
+  display: none !important;
+}
+
+@media (min-width: 961px) {
+  html.geo-in .ach-grid,
+  .ach-grid.two-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

@@ -5,7 +5,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Velagali Hemanth Kumar — AI/ML Engineer</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=2">
+<style>
+  html.geo-in [data-geo-hide-in="IN"],
+  [data-geo-hide-in="IN"].geo-hidden {
+    display: none !important;
+  }
+  @media (min-width: 961px) {
+    html.geo-in .ach-grid,
+    .ach-grid.two-cols {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+</style>
+<script>
+  (function() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var geo = params.get('geo') || params.get('country');
+      if (geo) {
+        if (geo.toLowerCase() === 'reset') {
+          sessionStorage.removeItem('visitor_country');
+        } else {
+          sessionStorage.setItem('visitor_country', geo.toUpperCase());
+        }
+      }
+      var c = sessionStorage.getItem('visitor_country');
+      if (!c) {
+        var tz = (Intl && Intl.DateTimeFormat) ? Intl.DateTimeFormat().resolvedOptions().timeZone : '';
+        var offset = new Date().getTimezoneOffset();
+        if (tz === 'Asia/Kolkata' || tz === 'Asia/Calcutta' || offset === -330) {
+          c = 'IN';
+        }
+      }
+      if (c === 'IN') {
+        document.documentElement.classList.add('geo-in');
+      } else if (c) {
+        document.documentElement.classList.add('geo-foreign');
+      }
+    } catch(e) {}
+  })();
+</script>
 </head>
 <body>
 <div id="cursor-dot"></div>
@@ -66,8 +106,8 @@
       <div class="stat-item"><strong>3</strong>Research Papers</div>
       <div class="stat-sep"></div>
       <div class="stat-item"><strong>5+</strong>Projects Built</div>
-      <div class="stat-sep"></div>
-      <div class="stat-item"><strong>SIH '24</strong>Finalist</div>
+      <div class="stat-sep" data-geo-hide-in="IN"></div>
+      <div class="stat-item" data-geo-hide-in="IN"><strong>SIH '24</strong>Finalist</div>
     </div>
   </div>
 
@@ -352,10 +392,10 @@
         <div style="display:flex;justify-content:space-between;align-items:baseline">
           <span class="proj-num">P.03</span><span class="proj-year">2024</span>
         </div>
-        <div class="proj-title">AI-Based Enhancement of Lunar PSR Imagery (SIH 2024)</div>
-        <p class="proj-desc">AI-driven image enhancement pipeline for Permanently Shadowed Region lunar images from OHRC camera. Applied preprocessing and contrast enhancement for improved visibility in low-light shadowed regions. <em>SIH 2024 Grand Finale project.</em></p>
+        <div class="proj-title">AI-Based Enhancement of Lunar PSR Imagery <span data-geo-hide-in="IN">(SIH 2024)</span></div>
+        <p class="proj-desc">AI-driven image enhancement pipeline for Permanently Shadowed Region lunar images from OHRC camera. Applied preprocessing and contrast enhancement for improved visibility in low-light shadowed regions. <em data-geo-hide-in="IN">SIH 2024 Grand Finale project.</em></p>
         <div class="proj-tags">
-          <span class="proj-tag">Image Enhancement</span><span class="proj-tag">Space AI</span><span class="proj-tag">OHRC</span><span class="proj-tag">SIH 2024</span>
+          <span class="proj-tag">Image Enhancement</span><span class="proj-tag">Space AI</span><span class="proj-tag">OHRC</span><span class="proj-tag" data-geo-hide-in="IN">SIH 2024</span>
         </div>
       </div>
 
@@ -490,7 +530,7 @@
       <div class="section-line"></div>
     </div>
     <div class="ach-grid">
-      <div class="ach-card reveal reveal-d1">
+      <div class="ach-card reveal reveal-d1" data-geo-hide-in="IN">
         <div class="ach-rank">01</div>
         <div class="ach-badge">SIH 2024 · National</div>
         <div class="ach-title">Smart India Hackathon Grand Finale</div>
@@ -595,6 +635,6 @@
   <div class="foot-copy">Built with care · Andhra Pradesh, India</div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=2"></script>
 </body>
 </html>
