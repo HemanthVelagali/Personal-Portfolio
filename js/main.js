@@ -61,7 +61,7 @@ document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
 // Dual image cursor tracking removed as Hero section is now static.
 
 // TYPEWRITER (nav terminal)
-const cmds = ['python train.py','./run_inference.sh','git commit -m "edge AI"','docker run llm-service','python deploy.py --edge'];
+const cmds = ['lead ai-team --scale 9','python train_healthcare_ai.py','deploy rag-pipeline --prod','git commit -m "voice AI"','docker run llm-service'];
 let ci=0,ci2=0,typing=true,waiting=false;
 const cmdEl = document.getElementById('terminal-cmd');
 if(cmdEl) {
